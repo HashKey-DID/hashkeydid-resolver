@@ -80,6 +80,12 @@ module.exports = {
       accounts: [process.env.mumbai_pri],
       // gas: 2100000,
       // gasPrice: 50000000000,
+    },
+    mumbai_dev: {
+      url: "https://polygon-testnet.public.blastapi.io",
+      accounts: [process.env.mumbai_pri],
+      // gas: 2100000,
+      // gasPrice: 50000000000,
     }
   },
   paths: {
