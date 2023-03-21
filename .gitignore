@@ -8,3 +8,10 @@ typechain-types
 # Hardhat files
 cache
 artifacts
+task
+deployments
+remix-compiler.config.js
+hardhat.config.js
+deploy.sh
+scripts
+task

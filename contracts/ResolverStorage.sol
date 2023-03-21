@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 contract ResolverStorage {
 
-    address did;
+    address public did;
 
     mapping(uint256 => mapping(uint256 => bytes)) _addresses;
 
