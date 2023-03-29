@@ -39,16 +39,9 @@ contract Resolver is ResolverStorage, Initializable {
         did = DIDAddr;
     }
 
-    /// @dev Set whether reverse the address to did
-    /// @param isReverse true/false
-    function setReverse(bool isReverse) public {
-        _isReverse[msg.sender] = isReverse;
-    }
-
     /// @dev Get the did name from the addr
     /// @param _addr address of user
     function name(address _addr) public view returns (string memory) {
-        require(_isReverse[_addr], "this addr has not set reverse record");
         uint256 tokenId = DID(did).tokenOfOwnerByIndex(_addr, 0);
         return DID(did).tokenId2Did(tokenId);
     }

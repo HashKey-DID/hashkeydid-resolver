@@ -15,3 +15,4 @@ hardhat.config.js
 deploy.sh
 scripts
 task
+upgrade.sh
